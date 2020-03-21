@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Contact Me</title>
 </head>
-<body background="background.jpg" style="background-repeat: round;" >
+<body  >
 
 <header>
-	<nav>
+	<nav id="navigation">
         <ul >
             <li ><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -18,21 +18,21 @@
     <h1>Contact Info</h1>
 </header>
 <main>
-<section>
-	<p><img src="loc.svg" width="40" height="40" alt="icon location">Location:Agios Ioannis Rentis,Greece</p>
-	<p><img src="email.svg" width="25" height="25" alt="icon email">Email:<a href="mailto:fotinipapad@hotmail.com">fotinipapad@hotmail.com</a> or <a href="mailto:p3160133@aueb.gr">p3160133@aueb.gr</a>  </p>
-	<p><img src="tel.svg" width="25" height="25" alt="icon telephone">Telephone:<a href="tel:6970740830">6970740830</a></p>
-	<p><img src="linkedin.png" width="25" height="25" alt="icon linkedin">Linked In:<a href="https://linkedin.com/in/foteini-papadopoulou-4ba01a164">linkedin.com/in/foteini-papadopoulou/</a></p>
-</section>
+
+	<p><img src="images/loc.svg" width="40" height="40" alt="icon location">Location:Agios Ioannis Rentis,Greece</p>
+	<p><img src="images/email.svg" width="25" height="25" alt="icon email">Email:<a href="mailto:fotinipapad@hotmail.com">fotinipapad@hotmail.com</a> or <a href="mailto:p3160133@aueb.gr">p3160133@aueb.gr</a>  </p>
+	<p><img src="images/tel.svg" width="25" height="25" alt="icon telephone">Telephone:<a href="tel:6970740830">6970740830</a></p>
+	<p><img src="images/linkedin.png" width="25" height="25" alt="icon linkedin">Linked In:<a href="https://linkedin.com/in/foteini-papadopoulou-4ba01a164">linkedin.com/in/foteini-papadopoulou/</a></p>
+
 <h2>Contact Form</h2>
 <form method="post" action="submitform.php">
 	<fieldset>
 		<legend>Name</legend>
-		<p name="sender">First Name:<input></p>
+		<p>First Name:<input></p>
 		<p>Last Name:<input></p>
 		<p>Address:<input></p>
 		<p>City:<input></p>
-		<p>Postal Code:<input type="number" pattern="[0-9]{5}"></p>
+		<p>Postal Code:<input type="number"></p>
 		<p> Are you a member of <abbr title="Athens University of Economics and Bussiness">AUEB</abbr>?:</p>
 		<div id="group">
 			<input type="radio" id="yes" name="group">
@@ -44,7 +44,7 @@
 	
 	<fieldset>
 		<legend>Message</legend>
-		<p>Email:<input type="senderEmail"></p>
+		<p>Email:<input type="email"></p>
 		<textarea name="message" rows=10 cols=80>
 		
 		</textarea>
@@ -52,6 +52,7 @@
 	<input type="submit" value="Submit" >
 </form>
 </main>
+<br><a href="#navigation">Go to top</a>
 <hr>
 <footer> 
     <p><i>Author </i>: Foteini Papadopoulou </p>

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Projects</title>
 </head>
-<body background="background.jpg"  style="background-repeat: round;"  >
+<body>
 <header>
-	<nav>
+	<nav id="navigation">
         <ul >
             <li ><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -16,16 +16,102 @@
     </nav>
     <h1>My Projects</h1>
     
-    <h4>This page displays my undergraduate university projects .</h4>
+    <h3>This page displays my undergraduate university projects .</h3>
+    <p>You can find the source code of the projects at my <a href="https://github.com/fwteinhpap">Github page</a></p>
 </header>
 <main>
 
-<ol>
-	<li></li>
-	<li></li>
-	<li></li>
+<ol type="i">
+	<li>
+        <header>
+            <h3>LiveBusMaps</h3>
+            <p>
+                This Project is based on Publish/Subscribe system and was created in terms of course <i>Distributed Systems</i> in the 6th semester of Departement of Computer Science @ AUEB.
+            </p>
+            </header>
+        
+                <p>
+                    <b>Publish/Subscribe System</b>
+                    is a messaging pattern where senders of messages, called publishers,
+                    do not program the messages to be sent directly to specific receivers,
+                    called subscribers, but instead categorize published messages into classes
+                    without knowledge of which subscribers.
+                </p>
+                <p> 
+                    In fact, in this system, publishers
+                    connect with brokers which forward the message to the subscriber that want 
+                    to take the message. Subscribers express interest in one or more classes and 
+                    only receive messages that are of interest, without knowledge of which 
+                    publishers, if any, there are.
+                </p>
+                <p>
+                    In this project, We want to gather the 
+                    real-time bus location information. We don't have real-time data ,so publishers 
+                    have to read a txt file named "busLinesNew" which is located in DS_project_dataset
+                    folder and has location data from greek buses. Brokers distribute the topics
+                    (bus lines) according to their hashed number. Also,an Android application has 
+                    been made for Subscribers.
+                </p>
+                <img src="images/giphy1.gif" alt="gif about project" width="200" height="400">
+                 <img src="images/giphy2.gif" alt="gif about project"  width="200" height="400">
+            
+            <footer>
+                Note that it works only in private network,ips and ports.
+                <br>source:<a href="https://en.wikipedia.org/wiki/Publish–subscribe_pattern"> Wikipedia:Publish/Subscribe System</a>
+            </footer>
+    </li>
+	<li>
+        <header>
+            <h3>
+                ReversiGame
+            </h3>
+            <p>
+                This Project was created in terms of course <i>Artificial Intelligence</i> in the 5th semester of Departement of Computer Science.
+            </p>
+        </header>
+        
+            <p>
+                It's a simple game written in Java using the <b>Min-Max Algorithm</b>.
+            </p>
+            <p> 
+                Min-Max algorithm is a decision rule used in artificial intelligence, decision theory, game theory, statistics, and philosophy for minimizing the possible loss for a worst case (maximum loss) scenario. When dealing with gains, it is referred to as "maximin"—to maximize the minimum gain. 
+            </p>
+            <p>
+                A simple example of playing is below:
+            </p>
+            <img src="images/reversi.gif" alt="reversi game gif" width="300" height="400">
+
+        
+        <footer>
+            source:<a href="https://en.wikipedia.org/wiki/Minimax">Wikipedia:Minimax</a>
+        </footer>
+    </li>
+	<li>
+        <header>
+            <h3>
+                Audio Mixer
+            </h3>
+            <p>
+                This Project was created in terms of course <i>Multimedia Technology</i> in the 7th semester of Departement of Computer Science. 
+            </p>
+        </header>
+        
+            <p>
+                <b>Web Audio API </b>is the main technology that the website uses. By pushing the Play/Stop Button, a song("Roxanne/The police") is loaded and you can add 4 filters on it.
+            </p>
+            <p>
+                The 1st filter is the Dynamic Compressor which has many attributes that you can edit.
+            </p>
+            
+            <p>You can learn about the attributes from the website of <a href="https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode" >WebAudioAPI</a></p>
+            <p> The other filters that you can enable is bass,treble and middle.</p>
+            <img src="images/audiomixer.JPG" width="700" height="400" alt="website of audiomixer">
+            <img src="images/compressor.jpg" width="500" height="250" alt="the dynamic compressor">
+        
+    </li>
 </ol>
 </main>
+<br><a href="#navigation">Go to top</a>
 	<hr>
 	<footer> 
 	    <p><i>Author </i>: Foteini Papadopoulou</p>
