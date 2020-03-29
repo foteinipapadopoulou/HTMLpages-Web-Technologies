@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Me</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
-<body  >
+<body >
 
 <header>
 	<nav id="navigation">
-        <ul >
+        <ul>
             <li ><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="interests.html">Interests</a></li>
@@ -17,48 +18,71 @@
     </nav>
     <h1>Contact Info</h1>
 </header>
-<main>
-
-	<p><img src="images/loc.svg" width="40" height="40" alt="icon location">Location:Agios Ioannis Rentis,Greece</p>
-	<p><img src="images/email.svg" width="25" height="25" alt="icon email">Email:<a href="mailto:fotinipapad@hotmail.com">fotinipapad@hotmail.com</a> or <a href="mailto:p3160133@aueb.gr">p3160133@aueb.gr</a>  </p>
-	<p><img src="images/tel.svg" width="25" height="25" alt="icon telephone">Telephone:<a href="tel:6970740830">6970740830</a></p>
-	<p><img src="images/linkedin.png" width="25" height="25" alt="icon linkedin">Linked In:<a href="https://linkedin.com/in/foteini-papadopoulou-4ba01a164">linkedin.com/in/foteini-papadopoulou/</a></p>
+<main class="container">
+	
+	<p>
+		<img class="icons" src="images/loc.png" width="30" height="30" alt="icon location">
+		<a href="https://goo.gl/maps/6CVPs6MtQdgPmUAo8" target="_blank">
+			Agios Ioannis Rentis, Greece
+		</a>
+		 
+	</p>
+	<p>
+		<img class="icons" src="images/email.svg" width="25" height="25" alt="icon email">
+		
+		<a href="mailto:fotinipapad@hotmail.com">
+			fotinipapad@hotmail.com
+		</a>
+	</p>
+	<p>
+		<img class="icons" src="images/tel.png" width="25" height="25" alt="icon telephone">
+		
+		<a href="tel:6970740830">
+			6970740830
+		</a>
+	</p>
+	<p>
+		<img class="icons" src="images/linkedin.svg" width="25" height="25" alt="icon linkedin">
+		
+		<a href="https://linkedin.com/in/foteini-papadopoulou-4ba01a164" target="_blank">
+			linkedin.com/in/foteini-papadopoulou/
+		</a>
+	</p>
 
 <h2>Contact Form</h2>
 <form method="post" action="mailto:fotinipapad@hotmail.com?subject=Contact Form from site" enctype="text/plain">
 	<fieldset>
-		<legend>Name</legend>
-		<p>First Name:<input type="text" name="First Name"></p>
-		<p>Last Name:<input type="text" name="Last Name"></p>
-		<p>Address:<input type="text" name="Address" ></p>
-		<p>City:<input type="text" name="City"></p>
-		<p>Postal Code:<input type="number" name="Postal Code"></p>
+		<legend>Personal Information</legend>
+		<p>First Name:<input type="text" name="First Name" placeholder="Your first name.."></p>
+		<p>Last Name:<input type="text" name="Last Name" placeholder="Your last name.." ></p>
+		<p>Address:<input type="text" name="Address" placeholder="Your address.." ></p>
+		<p>City:<input type="text"  name="City"placeholder="Your city.."></p>
+		<p>Postal Code:<input type="number"  name="Postal Code" pattern="[0-9]{5}" placeholder="Your postal code.."></p>
 		<p> Are you a member of <abbr title="Athens University of Economics and Bussiness">AUEB</abbr>?:</p>
-		
-			<input type="radio" id="yes" name="I am a Member of AUEB">
+		<div name="Member of AUEB">
+			<input type="radio" id="yes" name="Member of AUEB">
 			<label for="yes"> Yes</label>
-			<input type="radio" id="no" name="I am not a Member of AUEB">
+			<input type="radio" id="no" name="Member of AUEB">
 			<label for="no"> No</label>
+		</div>
 		
 	</fieldset>
 	
 	<fieldset>
 		<legend>Message</legend>
-		
-		<textarea placeholder="Type your message here ..." name="Message" rows=10 cols=80 >
-		</textarea>
+		<textarea placeholder="Type your message here ..." name="Message" rows=10 cols=80 ></textarea>
 	</fieldset>
 	<input type='reset' value='Reset' name='reset'>
 	<input type="submit" value="Submit" >
 	
 </form>
 </main>
-<br><a href="#navigation">Go to top</a>
+<br><div id="go-top"><a  class="out-container-links" href="#navigation">Go to top</a></div>
 <hr>
-<footer> 
+<footer id="end"> 
     <p><i>Author </i>: Foteini Papadopoulou </p>
     <p>
-    <i>Contact Information</i>: <a href="mailto:fotinipapad@hotmail.com">fotinipapad@hotmail.com</a></p>
+    <i>Contact Information</i>: <a class="out-container-links" href="mailto:fotinipapad@hotmail.com">fotinipapad@hotmail.com</a></p>
     <p> March 2020</p>
 </footer>
 </body>

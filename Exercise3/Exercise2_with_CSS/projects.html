@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Projects</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
 <header>
@@ -15,21 +16,25 @@
         </ul>
     </nav>
     <h1>My Projects</h1>
-    
-    <h3>This page displays my undergraduate university projects .</h3>
-    <p>You can find the source code of the projects at my <a href="https://github.com/fwteinhpap">Github page</a></p>
+    <div class="out-container">
+		<h3>This page displays my undergraduate university projects .</h3>
+		<p>You can find the source code of the projects at my <a class="out-container-links"href="https://github.com/fwteinhpap" target="_blank">Github page</a></p>
+	</div>
 </header>
-<main>
+<main class="container">
 
-<ol type="i">
-	<li>
+<ol type="i" class="order-list-project">
+	<li >
         <header>
             <h3>LiveBusMaps</h3>
             <p>
-                This Project is based on Publish/Subscribe system and was created in terms of course <i>Distributed Systems</i> in the 6th semester of Departement of Computer Science @ AUEB.
+                This Project is based on Publish/Subscribe system and was created in terms of course <i>Distributed Systems</i> in the 6th semester of Departement of Computer Science @ <abbr title="Athens University of Economics and Bussiness"><a href="https://www.aueb.gr" target="_blank">AUEB</a></abbr>.
             </p>
-            </header>
-        
+        </header>
+				<div  id="buses-app-img">
+                <img class="project-interest-images" src="images/giphy1.gif" alt="gif about project" width="200" height="400">
+                <img class="project-interest-images" src="images/giphy2.gif" alt="gif about project"  width="200" height="400">
+				</div>
                 <p>
                     <b>Publish/Subscribe System</b>
                     is a messaging pattern where senders of messages, called publishers,
@@ -52,21 +57,19 @@
                     (bus lines) according to their hashed number. Also,an Android application has 
                     been made for Subscribers.
                 </p>
-                <img src="images/giphy1.gif" alt="gif about project" width="200" height="400">
-                 <img src="images/giphy2.gif" alt="gif about project"  width="200" height="400">
-            
-            <footer>
-                Note that it works only in private network,ips and ports.
-                <br>source:<a href="https://en.wikipedia.org/wiki/Publish–subscribe_pattern"> Wikipedia:Publish/Subscribe System</a>
+				
+            <footer id="end-of-project">
+                Note that it works only in private network.
+                <br>source:<a href="https://en.wikipedia.org/wiki/Publish–subscribe_pattern" target="_blank"> Wikipedia:Publish/Subscribe System</a>
             </footer>
     </li>
 	<li>
         <header>
             <h3>
-                ReversiGame
+                Reversi Game
             </h3>
             <p>
-                This Project was created in terms of course <i>Artificial Intelligence</i> in the 5th semester of Departement of Computer Science.
+                This Project was created in terms of course <i>Artificial Intelligence</i> in the 5th semester of Departement of Computer Science @ <abbr title="Athens University of Economics and Bussiness"><a href="https://www.aueb.gr" target="_blank">AUEB</a></abbr>.
             </p>
         </header>
         
@@ -79,11 +82,12 @@
             <p>
                 A simple example of playing is below:
             </p>
-            <img src="images/reversi.gif" alt="reversi game gif" width="300" height="400">
-
+			<div id="reversi-img">
+            <img  class="project-interest-images" src="images/reversi.gif" alt="reversi game gif" width="300" height="400">
+			</div>
         
-        <footer>
-            source:<a href="https://en.wikipedia.org/wiki/Minimax">Wikipedia:Minimax</a>
+        <footer id="end-of-project">
+            source:<a href="https://en.wikipedia.org/wiki/Minimax" target="_blank">Wikipedia:Minimax</a>
         </footer>
     </li>
 	<li>
@@ -92,7 +96,7 @@
                 Audio Mixer
             </h3>
             <p>
-                This Project was created in terms of course <i>Multimedia Technology</i> in the 7th semester of Departement of Computer Science. 
+                This Project was created in terms of course <i>Multimedia Technology</i> in the 7th semester of Departement of Computer Science @ <abbr title="Athens University of Economics and Bussiness"><a href="https://www.aueb.gr" target="_blank">AUEB</a></abbr>. 
             </p>
         </header>
         
@@ -103,20 +107,22 @@
                 The 1st filter is the Dynamic Compressor which has many attributes that you can edit.
             </p>
             
-            <p>You can learn about the attributes from the website of <a href="https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode" >WebAudioAPI</a></p>
+            <p>You can learn about the attributes from the website of <a href="https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode" target="_blank">WebAudioAPI</a></p>
             <p> The other filters that you can enable is bass,treble and middle.</p>
-            <img src="images/audiomixer.JPG" width="700" height="400" alt="website of audiomixer">
-            <img src="images/compressor.jpg" width="500" height="250" alt="the dynamic compressor">
-        
+			<div id="audio-mixer-imgs">
+            <img class="project-interest-images" src="images/audiomixer.JPG" width="700" height="400" alt="website of audiomixer">
+            <img class="project-interest-images" src="images/compressor.jpg" width="500" height="250" alt="the dynamic compressor">
+			</div>
     </li>
 </ol>
 </main>
-<br><a href="#navigation">Go to top</a>
+<br>
+<div id="go-top"><a  class="out-container-links" href="#navigation">Go to top</a></div>
 	<hr>
-	<footer> 
+	<footer id="end"> 
 	    <p><i>Author </i>: Foteini Papadopoulou</p>
 	    <p>
-	    <i>Contact Information</i>: <a href="mailto:fotinipapad@hotmail.com">fotinipapad@hotmail.com</a></p>
+	    <i>Contact Information</i>: <a class="out-container-links" href="mailto:fotinipapad@hotmail.com">fotinipapad@hotmail.com</a></p>
 	    <p> March 2020</p>
 	</footer>
 </body>

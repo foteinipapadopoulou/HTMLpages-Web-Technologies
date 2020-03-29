@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Interests/Hobbies</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
-<body >
+<body>
 <header>
 	<nav id="navigation">
         <ul >
@@ -17,12 +18,14 @@
     <h1>My Interests/Hobbies</h1>
 
 </header>
-<main>
-    <ul>
+<main class="container">
+    <ul class="unordered-list">
         <li>
+		<img id="book-img" class="project-interest-images" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1329612158l/11367726.jpg" width="200" height="300" alt="cover of the book">
             <h3>
-                Reading <a href="https://www.goodreads.com/book/show/11367726-defending-jacob">'Defending Jacob'/William Landay</a>
+                Reading <a href="https://www.goodreads.com/book/show/11367726-defending-jacob" target="_blank">'Defending Jacob'/William Landay</a>
             </h3>
+			
             <p>
                 Recently ,I have read this murder mystery book which ,I personally believe, is the most adventurous and exciting book I've ever read.
 
@@ -31,7 +34,7 @@
                 <i>Description</i>:<br>
                 Andy Barber has been an assistant district attorney in his suburban Massachusetts county for more than twenty years. He is respected in his community, tenacious in the courtroom, and happy at home with his wife, Laurie, and son, Jacob. But when a shocking crime shatters their New England town, Andy is blindsided by what happens next: His fourteen-year-old son is charged with the murder of a fellow student.
             </p>
-            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1329612158l/11367726.jpg" width="200" height="300" alt="cover of the book">
+            
         </li>
         <li>
             <h3>
@@ -42,26 +45,32 @@
             </p>
             <p>
                 Since then , I never stopped learning tradiotional greek dances. I believe that greek dance brings the community together and make people feel positive,happiness and joy. </p>
-            <a href="https://www.youtube.com/watch?v=6E-7SNZBIIw"><img src="images/dances.JPG" width="500" height="200" alt="greek dances"></a>
-        </li>
+				<div id="dances-img">
+            <a href="https://www.youtube.com/watch?v=6E-7SNZBIIw" target="_blank"><img class="project-interest-images"  src="images/dances.JPG" width="500" height="200" alt="greek dances"></a>
+			<figcaption>Click above the image to watch the video</figcaption>
+				</div>
+		</li>
         <li>
             <h3>
-            Watching <a href="https://en.wikipedia.org/wiki/Bodyguard_(British_TV_series)">Bodyguard(British TV series)</a>
+            Watching <a href="https://en.wikipedia.org/wiki/Bodyguard_(British_TV_series)" target="_blank">Bodyguard(British TV series)</a>
             </h3>
+			<div id="series-img">
+            <img class="project-interest-images" src="https://test.fyc.netflix.com/_assets/_img/titles/80235864.jpg" alt="Bodyguard series" width="300" height="150" > 
+			</div>
             <p>
                 The series is set around the fictional character of Police Sergeant David Budd, a British Army war veteran suffering from PTSD, who is now working for the Royalty and Specialist Protection Branch of London's Metropolitan Police Service. He is assigned as the principal protection officer (PPO) for the ambitious Home Secretary Julia Montague, whose politics he despises. As the series unravels, the series comments on many issues regarding the controversy around government monitoring of private information and its regulation, and also on PTSD.
             </p>
             <p> I really liked the strong acting, the well written dialogue and the exciting plot.</p>
-            <img src="https://test.fyc.netflix.com/_assets/_img/titles/80235864.jpg" alt="Bodyguard series" width="300" height="150"> 
-        </li>
+			
+		</li>
     </ul>
 </main>
-<br><a href="#navigation">Go to top</a>
+<br><div id="go-top"><a  class="out-container-links" href="#navigation" >Go to top</a></div>
 	<hr>
-	<footer> 
+	<footer id="end"> 
 	    <p><i>Author </i>: Foteini Papadopoulou</p>
 	    <p>
-	    <i>Contact Information</i>: <a href="mailto:fotinipapad@hotmail.com">fotinipapad@hotmail.com</a></p>
+	    <i>Contact Information</i>: <a class="out-container-links" href="mailto:fotinipapad@hotmail.com">fotinipapad@hotmail.com</a></p>
 	    <p> March 2020</p>
 	</footer>
 </body>

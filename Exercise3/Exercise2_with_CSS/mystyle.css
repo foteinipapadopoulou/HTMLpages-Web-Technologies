@@ -1,0 +1,170 @@
+*{
+	font-family:"Segoe UI",Arial,sans-serif;
+}
+body{
+	margin:10px 100px 20px 100px;
+	background-color:#f46a4e;
+	
+}
+.container{
+  border-radius: 5px;
+  background-color: rgba(251,251,251, 0.3); 
+  padding:5px 40px 10px 40px;
+  border: 1px solid #5c4a72;
+ 
+}
+h1{
+	text-align:center;
+	font-size:40px;
+	color:white;
+	font-weight: bold;
+	text-shadow:3px 2px #5c4a72;
+}
+
+p{
+	font-size:17px;
+}
+#navigation{
+	
+	padding-right:60px;
+	position:relative;
+	border-radius: 5px;
+	margin: auto;
+	height:44px;
+	font-weight:bold;
+	width: 50%;
+	border: 3px solid #5c4a72;
+	background-color:rgba(241,241,241,0.65);
+	font-size:17px;
+	letter-spacing: 1px;
+	line-height: 0.7;
+	word-wrap: break-word;
+}
+
+
+#navigation ul li {
+
+	list-style-type: none;
+	
+}
+#navigation a{
+	
+	width:25%;
+	display:inline;
+	float:left;
+	text-align:center;
+	
+}
+
+
+a{
+	text-decoration:none;
+}
+a:link{
+	color:#5c4a72;
+}
+a:visited{
+	color:#618685;
+	
+}
+a:hover{
+	color:#f46a4e;
+}
+a:active {
+  color: blue;
+}
+
+.out-container{
+	line-height:0.5;
+	font-style:italic;
+	text-align:center;
+}
+
+
+
+.out-container-links:visited{
+	color:#463652;
+}
+.out-container-links:hover{
+	color:#9b7ebf;
+}
+#end{
+	text-align:center;
+}
+#me-img{
+	border-radius:7%;
+	margin:30px 0px 10px 10px;
+	float:right;
+}
+
+#go-top{
+	text-align:right;
+}
+
+.project-interest-images{
+	border-radius:7px;
+	margin:5px 10px 5px 10px;
+}
+
+#buses-app-img,#book-img{
+	float:right;
+}
+
+#reversi-img,#audio-mixer-imgs,#dances-img{
+	text-align:center;
+}
+
+#end-of-project,figcaption{
+	line-height:1.5;
+	font-size:14px;
+}
+
+#series-img{
+	float:left;
+}
+
+.order-list-project,.unordered-list{
+	padding:0px 20px 10px 20px;
+	
+}
+
+input{
+	margin:0px 5px 5px 5px;
+	border-radius: 2px;
+	padding-left:6px;
+	padding-right:6px;
+}
+
+fieldset{
+	padding:10px 20px 10px 20px;
+	margin:5px 5px 5px 5px;
+}
+
+input[type=submit],input[type=reset]{
+	cursor:pointer;
+	border:none;
+}
+input[type=reset]{
+	font-size:14px;
+	padding:4px 20px;
+}
+input[type=submit]{
+	background-color:#5c4a72;
+	color:white;
+	float:right;
+	font-size:17px;
+	padding:7px 26px;
+	
+}
+input[type=submit]:hover{
+	background-color:#9b7ebf;
+}
+
+input[type=reset]:hover{
+	background-color:#cccccc;
+}
+.icons{
+	padding-left:3px;
+	
+	
+}
