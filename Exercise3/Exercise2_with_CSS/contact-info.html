@@ -8,12 +8,12 @@
 <body >
 
 <header>
-	<nav id="navigation">
+	<nav id="top" class="navigation">
         <ul>
             <li ><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="interests.html">Interests</a></li>
-            <li><a href="contact-info.html">Contact Info</a></li>
+            <li><a href="contact-info.html" id="active">Contact Info</a></li>
         </ul>
     </nav>
     <h1>Contact Info</h1>
@@ -50,14 +50,14 @@
 	</p>
 
 <h2>Contact Form</h2>
-<form method="post" action="mailto:fotinipapad@hotmail.com?subject=Contact Form from site" enctype="text/plain">
+<form id="contactform" method="post" action="mailto:fotinipapad@hotmail.com?subject=Contact Form from site" enctype="text/plain">
 	<fieldset>
 		<legend>Personal Information</legend>
 		<p>First Name:<input type="text" name="First Name" placeholder="Your first name.."></p>
 		<p>Last Name:<input type="text" name="Last Name" placeholder="Your last name.." ></p>
 		<p>Address:<input type="text" name="Address" placeholder="Your address.." ></p>
 		<p>City:<input type="text"  name="City"placeholder="Your city.."></p>
-		<p>Postal Code:<input type="number"  name="Postal Code" pattern="[0-9]{5}" placeholder="Your postal code.."></p>
+		<p>Postal Code:<input type="text"  name="Postal Code"  placeholder="Your postal code.."></p>
 		<p> Are you a member of <abbr title="Athens University of Economics and Bussiness">AUEB</abbr>?:</p>
 		<div name="Member of AUEB">
 			<input type="radio" id="yes" name="Member of AUEB">
@@ -77,10 +77,10 @@
 	
 </form>
 </main>
-<br><div id="go-top"><a  class="out-container-links" href="#navigation">Go to top</a></div>
+<br><div id="go-top"><a  class="out-container-links" href="#top">Go to top</a></div>
 <hr>
 <footer id="end"> 
-    <p><i>Author </i>: Foteini Papadopoulou </p>
+    <p>&copy; Foteini Papadopoulou </p>
     <p>
     <i>Contact Information</i>: <a class="out-container-links" href="mailto:fotinipapad@hotmail.com">fotinipapad@hotmail.com</a></p>
     <p> March 2020</p>
