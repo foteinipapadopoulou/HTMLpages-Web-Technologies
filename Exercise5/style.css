@@ -35,20 +35,14 @@ header h1 {
     grid-area: main;
     padding:10px 30px 10px 30px;
     text-align: justify;
-   
     display: flex;
-    flex-flow: column wrap ;
-    justify-self:flex-start;
-    
-   
-
-    
+    flex-flow:column wrap;
 }
 .side-bar{
     margin:0;
     display: flex;
     flex-flow: column wrap ;
-    justify-self:flex-start;
+    
     
     padding:0;
     background-color: #e5e5e5;
@@ -60,7 +54,7 @@ header h1 {
     margin:0;
     display: flex;
     flex-flow: column wrap ;
-    justify-self:flex-start;
+     
     flex-flow: column;
     padding:0;
     border:3px solid #23374d; 
@@ -88,14 +82,18 @@ header h1 {
 .grid-container{
     
     display: grid;
-    grid-template-columns:  25%;
-    grid-template-areas: 
-    'header   header    header  header   header '
-    'menubar   menubar menubar menubar menubar'
-    'sidebar   main   main  main    websitesbar'
-    'footer   footer   footer footer  footer';
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas:    
+    'header'  
+    'menubar'
+    'sidebar'
+    'main'
+    'websitesbar'
+    'footer';
     
 }
+
 
 
 .side-bar a{
@@ -155,6 +153,8 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
 }
 .end-article li{
     list-style: none;
+    
+    
 }
 
 #test-turing-img{
@@ -170,15 +170,15 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
 .side-websites-bar h3{
     text-align: center;
     font-style: italic;
-    background-color:#23374d ;
-    color:white;
-    border-bottom: 3px double white;
+}
+
+#websites{
+    list-style-type: none;
+    
 }
 
 
-
-
-.side-websites-bar a{
+#websites a{
     padding:15px 5px 15px 5px;
     font-size:110%;
     display: block;
@@ -188,7 +188,7 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
 }
 
 
-.side-websites-bar a:hover{
+#websites a:hover{
     background-color: #e5e5e5;
     color:#23374d;
 
@@ -281,21 +281,37 @@ input[type=reset]:hover{
 }
 
 #logo_aueb{
-   width:150px;
+    width:150px;
    height:130px;
    
 }
-#center_logo_aueb{
-    text-align: center;
-}
 
-
-#img-assistantphone,#disofai,#aichess{
+.centerimg{
     display: flex;
+    justify-content: center;
     width:100%;
 }
 
-#contactform fieldset{
+#aichess{
+    width:50%;
+}
+#img-assistantphone,#disofai{
+    
+    width:80%;
+}
+.table,td{
+    background-color: #f8f9fa;
+    border-collapse: collapse;
+    border:1px solid #426992;
+}
+th,td{
+    padding:5px;
+}
+.author{
+    font-size: 80%;
+}
+
+.main fieldset{
     margin:0;
     display: flex;
     flex-flow: column wrap ;
@@ -307,8 +323,4 @@ input[type=reset]:hover{
 #contact p{
     display: inline-block;
   white-space: no-wrap;
-}
-
-figcaption{
-    font-size: 80%;
 }

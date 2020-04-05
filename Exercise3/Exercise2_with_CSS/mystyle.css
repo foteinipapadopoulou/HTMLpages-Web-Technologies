@@ -1,14 +1,22 @@
 *{
 	font-family:"Segoe UI",Arial,sans-serif;
+	box-sizing: border-box;
 }
+
+	
 body{
 	margin:10px 100px 20px 100px;
-	background-color:#f46a4e;
-	
+	height: 100%;
+	background-image: url("images/background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #f46a4e;
 }
+
 .container{
   border-radius: 5px;
-  background-color: rgba(251,251,251, 0.3); 
+  background-color: rgba(251,251,251, 0.9); 
   padding:5px 40px 10px 40px;
   border: 1px solid #5c4a72;
  
