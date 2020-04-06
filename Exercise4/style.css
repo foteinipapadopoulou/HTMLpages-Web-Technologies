@@ -99,13 +99,12 @@ header h1 {
 
 
 .side-bar a{
-    padding:0 5px 10px 5px;
     text-align: center;
     text-decoration: none;
     color:black;
     font-size: 18px;
     padding: 15px;
-    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
     
 }
 
@@ -185,6 +184,7 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
     color:black;
     text-align: center;
     text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
 }
 
 

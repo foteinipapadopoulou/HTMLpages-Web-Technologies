@@ -7,11 +7,11 @@
 body{
 	margin:10px 100px 20px 100px;
 	height: 100%;
-	background-image: url("images/background.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: #f46a4e;
+	background-color: #d4ccdb;
+	background-image: url("images/b.jpg");
+	background-repeat:repeat-x;
+	
+	
 }
 
 .container{
@@ -26,7 +26,7 @@ h1{
 	font-size:40px;
 	color:white;
 	font-weight: bold;
-	text-shadow:3px 2px #5c4a72;
+	text-shadow:3px 2px black;
 }
 
 p{
@@ -38,9 +38,10 @@ p{
 .navigation{
 	
 	padding-right:60px;
+	padding-bottom: 45px;
 	position:relative;
 	border-radius: 5px;
-	margin: auto;
+	margin: 100px auto 20px auto;
 	height:44px;
 	font-weight:bold;
 	width: 50%;
@@ -69,22 +70,19 @@ p{
 a{
 	text-decoration:none;
 }
+
 #active:visited{
-	color:#f46a4e;
+	color:#1a46be;
 }
 a:link,.navigation a:visited{
 	color:#5c4a72;
 }
-.active:visited{
-	color:#f46a4e;
-}
+
 a:visited{
 	color:#618685;
-	
 }
-
 a:hover,.navigation a:hover{
-	color:#f46a4e;
+	color:#1a46be;
 }
 a:active {
   color: blue;
@@ -100,7 +98,7 @@ a:active {
 
 
 .out-container-links:visited{
-	color:#463652;
+	color:#5c4a72;
 }
 .out-container-links:hover{
 	color:#9b7ebf;

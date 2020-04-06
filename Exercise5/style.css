@@ -10,15 +10,12 @@ body{
 }
 
 header{
-    padding:10px 20px 10px 20px;
     color:white;
     background-color: #23374d;
     grid-area: header;
     cursor: context-menu;
     text-align: center;
-    font-size: 21px;
-    
-    
+    font-size: 17px;
 }
 header h1 {
     text-shadow: 2px 3px black;
@@ -33,17 +30,18 @@ header h1 {
 }
 .main{
     grid-area: main;
-    padding:10px 30px 10px 30px;
+    padding:5px 30px 10px 30px;
     text-align: justify;
     display: flex;
-    flex-flow:column wrap;
+    flex-flow: column wrap ;
+    justify-self:flex-start;
 }
 .side-bar{
+    width: 100%;
     margin:0;
     display: flex;
     flex-flow: column wrap ;
-    
-    
+    justify-self:flex-start;
     padding:0;
     background-color: #e5e5e5;
     grid-area:sidebar;
@@ -51,13 +49,14 @@ header h1 {
 }
 
 .side-websites-bar{
+    width: 100%;
     margin:0;
     display: flex;
     flex-flow: column wrap ;
-     
+    justify-self:flex-start;
     flex-flow: column;
     padding:0;
-    border:3px solid #23374d; 
+    border:1px solid #23374d; 
     background-color: rgba(16, 137, 255,0.5);
     grid-area: websitesbar;
    
@@ -82,28 +81,26 @@ header h1 {
 .grid-container{
     
     display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr;
-    grid-template-areas:    
-    'header'  
+    grid-template-columns:  repeat(auto-fill,minmax(1fr,2fr));
+    grid-template-areas: 
+    'header '
     'menubar'
-    'sidebar'
+    'sidebar '
     'main'
     'websitesbar'
-    'footer';
+    'footer ';
     
 }
 
 
-
 .side-bar a{
-    padding:0 5px 10px 5px;
+    
+    padding:10px;
     text-align: center;
     text-decoration: none;
     color:black;
-    font-size: 18px;
-    padding: 15px;
     
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
     
 }
 
@@ -153,8 +150,6 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
 }
 .end-article li{
     list-style: none;
-    
-    
 }
 
 #test-turing-img{
@@ -168,27 +163,29 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
     
 }
 .side-websites-bar h3{
+    font-size: 90%;
     text-align: center;
     font-style: italic;
+    background-color:#23374d ;
+    color:white;
+    border-bottom: 3px double white;
 }
 
-#websites{
-    list-style-type: none;
-    
-}
 
 
-#websites a{
-    padding:15px 5px 15px 5px;
-    font-size:110%;
+
+.side-websites-bar a{
+    padding:2px;
+    font-size:90%;
     display: block;
     color:black;
     text-align: center;
     text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
 }
 
 
-#websites a:hover{
+.side-websites-bar a:hover{
     background-color: #e5e5e5;
     color:#23374d;
 
@@ -202,7 +199,7 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
 
 
 #welcomeheader{
-    font-size:32px;
+    font-size:24px;
 }
 
 #ai-brain{
@@ -281,37 +278,21 @@ input[type=reset]:hover{
 }
 
 #logo_aueb{
-    width:150px;
+   width:150px;
    height:130px;
    
 }
+#center_logo_aueb{
+    text-align: center;
+}
 
-.centerimg{
+
+#img-assistantphone,#disofai,#aichess{
     display: flex;
-    justify-content: center;
     width:100%;
 }
 
-#aichess{
-    width:50%;
-}
-#img-assistantphone,#disofai{
-    
-    width:80%;
-}
-.table,td{
-    background-color: #f8f9fa;
-    border-collapse: collapse;
-    border:1px solid #426992;
-}
-th,td{
-    padding:5px;
-}
-.author{
-    font-size: 80%;
-}
-
-.main fieldset{
+#contactform fieldset{
     margin:0;
     display: flex;
     flex-flow: column wrap ;
@@ -323,4 +304,62 @@ th,td{
 #contact p{
     display: inline-block;
   white-space: no-wrap;
+}
+
+figcaption{
+    font-size: 80%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .grid-container{
+    
+        display: grid;
+        grid-template-columns:  repeat(auto-fill,minmax(1fr,2fr));
+        grid-template-areas: 
+        'header   header'
+        'menubar   menubar '
+        'sidebar   main    '
+        'websitesbar  main '
+        'footer   footer   ';
+        
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .grid-container{
+    
+        display: grid;
+        grid-template-columns:  repeat(auto-fill,minmax(1fr,2fr));
+        grid-template-areas: 
+    'header   header    header  header   header '
+    'menubar   menubar menubar menubar menubar'
+    'sidebar   main   main  main    websitesbar'
+    'footer   footer   footer footer  footer';
+        
+    }
+    header{
+        padding:10px 20px 10px 20px;
+        font-size: 21px;
+    }
+    .side-websites-bar{
+        width:200px;
+        border:1px solid #23374d; 
+    }
+
+    .side-websites-bar a{
+        padding:15px 5px 15px 5px;
+    font-size:110%;
+    }
+    .side-websites-bar h3{
+        font-size: 110%;
+    }
+    .side-bar a{
+        padding:15px;
+        font-size: 100%;
+    }
+    #welcomeheader{
+        font-size:30px;
+    }
 }
