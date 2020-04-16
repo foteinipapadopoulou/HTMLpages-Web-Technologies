@@ -182,9 +182,9 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
     border-bottom: 3px double #23374d;
 }
 
-#active{
+.active{
     background-color:#23374d ;
-    color:white;
+    color:white !important;
 }
 
 
@@ -210,8 +210,6 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
     background-color: #42699211;
     border:1px solid #23374d;
     border-radius: 7px;
-    width:95%;
-   
 }
 
 
@@ -221,17 +219,24 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
     font-family: Arial, Helvetica, sans-serif;
     width:80%;
     height:100px;
+    border: 1px solid #1089ff; 
 }
 
 input{
-	margin:5px;
-    border-radius: 2px;
+	display: block;
+    margin:5px;
+    border:none;
+    border-bottom: 1px solid #1089ff;
     padding:6px;
-    width:50%
+    width:min-content;
+    background-color: inherit;
 }
 
 input:focus, textarea:focus {
-	 background-color:rgb(255, 238, 206);
+    background-color:rgb(255, 238, 206);
+    border:none;
+    outline:none;
+    border-bottom:2px solid #680f1aa8 ;
 }
 input[type=reset]{
 	font-size:14px;
@@ -242,6 +247,7 @@ input[type=reset]{
 	
 }
 input[type=submit]{
+    display: inline;
 	background-color:#23374d;
 	color:white;
 	float:right;
@@ -253,11 +259,11 @@ input[type=submit]{
 
 	
 }
-input[type=submit]:hover{
+input[type=submit]:focus{
 	background-color:#426992;
 }
 
-input[type=reset]:hover{
+input[type=reset]:focus{
 	background-color:#cccccc;
 }
 .icons{

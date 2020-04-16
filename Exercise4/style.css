@@ -8,7 +8,6 @@ body{
     margin:0;   
     height: 100%;
 }
-
 header{
     padding:10px 20px 10px 20px;
     color:white;
@@ -16,9 +15,7 @@ header{
     grid-area: header;
     cursor: context-menu;
     text-align: center;
-    font-size: 21px;
-    
-    
+    font-size: 17px;    
 }
 header h1 {
     text-shadow: 2px 3px black;
@@ -35,25 +32,18 @@ header h1 {
     grid-area: main;
     padding:10px 30px 10px 30px;
     text-align: justify;
-   
     display: flex;
     flex-flow: column wrap ;
-    justify-self:flex-start;
-    
-   
-
-    
+    justify-self:flex-start;    
 }
 .side-bar{
     margin:0;
     display: flex;
     flex-flow: column wrap ;
-    justify-self:flex-start;
-    
+    justify-self:flex-start;  
     padding:0;
     background-color: #e5e5e5;
-    grid-area:sidebar;
-    
+    grid-area:sidebar; 
 }
 
 .side-websites-bar{
@@ -65,8 +55,7 @@ header h1 {
     padding:0;
     border:3px solid #23374d; 
     background-color: rgba(16, 137, 255,0.5);
-    grid-area: websitesbar;
-   
+    grid-area: websitesbar; 
 }
 
 .footer{
@@ -77,7 +66,6 @@ header h1 {
     flex-direction: column;
     line-height: 5px;
     padding-left:40px;
-    
 }
 
 .footer p{
@@ -86,15 +74,13 @@ header h1 {
 }
 
 .grid-container{
-    
     display: grid;
     grid-template-columns:  25%;
     grid-template-areas: 
     'header   header    header  header   header '
     'menubar   menubar menubar menubar menubar'
     'sidebar   main   main  main    websitesbar'
-    'footer   footer   footer footer  footer';
-    
+    'footer   footer   footer footer  footer';  
 }
 
 
@@ -105,12 +91,11 @@ header h1 {
     font-size: 18px;
     padding: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.267);
-    
 }
 
 .menu-bar a{
     font-size: 18px;
-    text-decoration: white;
+    text-decoration: none;
     color:black;
     padding-left:30px;
     padding-right:30px;
@@ -157,14 +142,11 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
 }
 
 #test-turing-img{
-    display: flex;
     width:100%;
 }
 
 #humorous-test-turing-img{
-    display: flex;
     width:80%;
-    
 }
 .side-websites-bar h3{
     text-align: center;
@@ -173,10 +155,6 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
     color:white;
     border-bottom: 3px double white;
 }
-
-
-
-
 .side-websites-bar a{
     padding:15px 5px 15px 5px;
     font-size:110%;
@@ -186,32 +164,23 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.123);
 }
-
-
 .side-websites-bar a:hover{
     background-color: #e5e5e5;
     color:#23374d;
-
     border-bottom: 3px double #23374d;
 }
-
-#active{
+.active{
     background-color:#23374d ;
-    color:white;
+    color:white !important;
 }
-
-
 #welcomeheader{
     font-size:32px;
 }
-
 #ai-brain{
-    display: flex;
     width: 100%;
     float:right;
     border-radius: 10%;
 }
-
 
 #contactform p{
 	margin:20px;
@@ -225,8 +194,6 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
     background-color: #42699211;
     border:1px solid #23374d;
     border-radius: 7px;
-    width:95%;
-   
 }
 
 
@@ -236,20 +203,26 @@ a:active,.main a:active,.side-bar a:active,.menu-bar a:active{
     font-family: Arial, Helvetica, sans-serif;
     width:80%;
     height:100px;
+    border: 1px solid #1089ff; 
 }
 
 input{
-	margin:5px;
-    border-radius: 2px;
+    display: block;
+    margin:5px;
+    border:none;
+    border-bottom: 1px solid #1089ff;
     padding:6px;
-    width:50%
+    width:min-content;
+    background-color: inherit;
 }
-
 input:focus, textarea:focus {
-	
-	 background-color:rgb(255, 238, 206);
+     background-color:rgb(255, 238, 206);
+     border:none;
+     outline:none;
+     border-bottom:2px solid #680f1aa8 ;
 }
 input[type=reset]{
+    display: inline;
 	font-size:14px;
 	padding:4px 20px;
 	cursor:pointer;
@@ -269,11 +242,11 @@ input[type=submit]{
 
 	
 }
-input[type=submit]:hover{
+input[type=submit]:focus{
 	background-color:#426992;
 }
 
-input[type=reset]:hover{
+input[type=reset]:focus{
 	background-color:#cccccc;
 }
 .icons{
@@ -291,7 +264,6 @@ input[type=reset]:hover{
 
 
 #img-assistantphone,#disofai,#aichess{
-    display: flex;
     width:100%;
 }
 

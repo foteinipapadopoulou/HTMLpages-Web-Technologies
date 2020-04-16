@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foteini's portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="grid-container">
+           <!--Top menu will be displayed only in devices with maxwidth:600px-->
+           <div class="top-menu">
+            <button class="btn" onclick="displayMenu()">
+                <img src="images/icon.png" width="50" height="50" alt="content icon">
+            </button>
+            <h2>Foteini's Portfolio</h2>
+        </div>
+        <nav class="menu">
+            <div class="content">
+                <button class="closebtn" onclick="closeMenu()">
+                    <img src="images/close.png" width="50" height="50" alt="close button">
+                </button>
+                <picture>
+                    <source media="(min-width:600px)" srcset="images/me2.png">
+                    <img src="images/me.png" alt="Foteini's portait" width="200" height="240">
+                </picture>
+                <a href="index.html">Αρχική</a>
+                <a href="about.html">Σχετικά</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Επικοινωνία</a>
+                <footer>
+                &copy;Foteini Papadopoulou, April 2020
+                </footer>
+            </div>
+        </nav>
+            <main class="main">
+                <header>
+                   <h1>Projects</h1>
+                   <p>Τα projects που παρουσιάζονται είναι τα :<a href="#LiveBusMaps">LiveBusMaps</a>,
+                    <a href="#ReversiGame">Reversi Game</a>,<a href="#AudioMixer">Audio Mixer</a>, τα 
+                οποία μπορείτε να βρείτε και από τη σελίδα μου στο <a href="http://github.com/fwteinhpap/" target="_blank">Github</a></p>
+                </header>
+                <ol type="i">
+                    <li>
+                            <h3 id="LiveBusMaps">LiveBusMaps</h3>
+                            <p>
+                                This Project is based on Publish/Subscribe system and was created in terms of course <i>Distributed Systems</i> in the 6th semester of Departement of Computer Science @ AUEB.
+                            </p>
+                        
+                                <p>
+                                    <b>Publish/Subscribe System</b>
+                                    is a messaging pattern where senders of messages, called publishers,
+                                    do not program the messages to be sent directly to specific receivers,
+                                    called subscribers, but instead categorize published messages into classes
+                                    without knowledge of which subscribers.
+                                </p>
+                                <p> 
+                                    In fact, in this system, publishers
+                                    connect with brokers which forward the message to the subscriber that want 
+                                    to take the message. Subscribers express interest in one or more classes and 
+                                    only receive messages that are of interest, without knowledge of which 
+                                    publishers, if any, there are.
+                                </p>
+                                <p>
+                                    In this project, We want to gather the 
+                                    real-time bus location information. We don't have real-time data ,so publishers 
+                                    have to read a txt file named "busLinesNew" which is located in DS_project_dataset
+                                    folder and has location data from greek buses. Brokers distribute the topics
+                                    (bus lines) according to their hashed number. Also,an Android application has 
+                                    been made for Subscribers.
+                                </p>
+                                <img src="images/giphy1.gif" alt="gif about project" width="200" height="400">
+                                 <img src="images/giphy2.gif" alt="gif about project"  width="200" height="400">
+                            
+                            <footer>
+                                Note that it works only in private network,ips and ports.
+                                <br>source:<a href="https://en.wikipedia.org/wiki/Publish–subscribe_pattern"> Wikipedia:Publish/Subscribe System</a>
+                            </footer>
+                    </li>
+                    <li>
+                       
+                            <h3 id="ReversiGame">
+                                ReversiGame
+                            </h3>
+                            <p>
+                                This Project was created in terms of course <i>Artificial Intelligence</i> in the 5th semester of Departement of Computer Science.
+                            </p>
+                       
+                        
+                            <p>
+                                It's a simple game written in Java using the <b>Min-Max Algorithm</b>.
+                            </p>
+                            <p> 
+                                Min-Max algorithm is a decision rule used in artificial intelligence, decision theory, game theory, statistics, and philosophy for minimizing the possible loss for a worst case (maximum loss) scenario. When dealing with gains, it is referred to as "maximin"—to maximize the minimum gain. 
+                            </p>
+                            <p>
+                                A simple example of playing is below:
+                            </p>
+                            <img src="images/reversi.gif" alt="reversi game gif" width="300" height="400">
+                
+                        
+                        <footer>
+                            source:<a href="https://en.wikipedia.org/wiki/Minimax">Wikipedia:Minimax</a>
+                        </footer>
+                    </li>
+                    <li>
+                        
+                            <h3 id="AudioMixer">
+                                Audio Mixer
+                            </h3>
+                            <p>
+                                This Project was created in terms of course <i>Multimedia Technology</i> in the 7th semester of Departement of Computer Science. 
+                            </p>
+                        
+                        
+                            <p>
+                                <b>Web Audio API </b>is the main technology that the website uses. By pushing the Play/Stop Button, a song("Roxanne/The police") is loaded and you can add 4 filters on it.
+                            
+                            </p>
+                            <p>
+                                You can listen the song here :
+                                 <audio controls>
+                                    <source src="roxanne.mp3" type="audio/mpeg">
+                                     Your browser does not support the audio tag.
+                                </audio>
+                            </p>
+                            <p>
+                                The 1st filter is the Dynamic Compressor which has many attributes that you can edit.
+                            </p>
+                            
+                            <p>You can learn about the attributes from the website of <a href="https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode" >WebAudioAPI</a></p>
+                            <p> The other filters that you can enable is bass,treble and middle.</p>
+                            <picture>
+                                <source media="(min-width:600px)" srcset="images/audiomixer.jpg">
+                                <img id="audiomixer" src="images/audiomixer2.JPG" width="700" height="400" alt="website of audiomixer">
+                            </picture>
+                           
+                            
+                        
+                    </li>
+                </ol>
+                </main>
+        </div>
+        <script    src="script.js"></script>
+    </body>
+</html>

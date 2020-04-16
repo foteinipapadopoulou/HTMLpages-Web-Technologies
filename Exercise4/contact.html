@@ -2,19 +2,20 @@
 <html lang="el">
     <head>
         <meta charset="UTF-8">
+        
         <title>Επικοινωνία:Τεχνητή Νοημοσύνη</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+         </head>
     <body>
         <div class="grid-container">
         <header>
-            <h1>Τεχνητή Νοημοσύνη</h1>
+            <h1>Τεχνητή Νοημοσύνη</h1><p id="date"></p>
             
         </header>
         <nav class="menu-bar">
             
             <a href="index.html" >Αρχική Σελίδα</a>
-            <a href="contact.html" id="active" >Επικοινωνία </a>
+            <a href="contact.html" class="active" >Επικοινωνία </a>
             <a href="about.html" >Σχετικά</a>
            
         </nav>
@@ -59,18 +60,17 @@
         
         <form id="contactform" method="post" action="mailto:fotinipapad@hotmail.com?subject=Contact_Form_from_site" enctype="text/plain">
             
-                <legend>Προσωπικές πληροφορίες</legend><br>
+                <h4>Προσωπικές πληροφορίες</h4>
                 <p>Όνομα:<input type="text" name="First Name" placeholder="Το όνομα σας.."></p>
                 <p>Επώνυμο:<input type="text" name="Last Name" placeholder="Το επώνυμο σας.." ></p>
                 <p>Διεύθυνση:<input type="text" name="Address" placeholder="Η διεύθυνση σας.." ></p>
                 <p>Πόλη:<input type="text"  name="City" placeholder="Η πόλη σας.."></p>
-                <p>ΤΚ:<input type="text"  name="Postal Code"  placeholder="Ο ΤΚ σας.."></p>     
- 
-                <legend>Μήνυμα</legend>
+                <p>Emai:<input type="email" name="Email" placeholder="To email σας.."></p>
+                <h4>Μήνυμα</h4>
                 <textarea placeholder="Πληκτρολογήστε το μήνυμα σας εδώ ..." name="Message"  ></textarea>
            
             <input type='reset' value='Επαναφορά' name='reset'>
-            <input type="submit" value="Αποστολή" >
+            <input type="submit" value="Αποστολή"  >
         </form> 
        
             

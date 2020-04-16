@@ -127,7 +127,7 @@ a:active {
 	text-align:center;
 }
 
-#end-of-project,figcaption{
+.end-of-project,figcaption{
 	line-height:1.5;
 	font-size:14px;
 }

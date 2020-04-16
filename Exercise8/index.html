@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foteini's portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="grid-container">
+           <!--Top menu will be displayed only in devices with maxwidth:600px-->
+           <div class="top-menu">
+            <button class="btn" onclick="displayMenu()">
+                <img src="images/icon.png" width="50" height="50" alt="content icon">
+            </button>
+            <h2>Foteini's Portfolio</h2>
+        </div>
+        <nav class="menu">
+            <div class="content">
+                <button class="closebtn" onclick="closeMenu()">
+                    <img src="images/close.png" width="50" height="50" alt="close button">
+                </button>
+                <picture>
+                    <source media="(min-width:600px)" srcset="images/me2.png">
+                    <img src="images/me.png" alt="Foteini's portait" width="200" height="240">
+                </picture>
+                <a href="index.html">Αρχική</a>
+                <a href="about.html">Σχετικά</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Επικοινωνία</a>
+                <footer>
+                &copy;Foteini Papadopoulou, April 2020
+                </footer>
+            </div>
+        </nav>
+            <main class="main" id="bg-img">
+                <header id="welcomeheader" >
+                   <h1><a href="about.html">Φωτεινή <br>Παπαδοπούλου</a></h1>
+                   <h2>Software Engineer</h2>
+                   <h3>Καλωσήρθατε στο portfolio μου!<br></h3>
+                   <h4>PASSION <br>FOR PROGRAMMING</h4>
+                </header>
+
+            </main>
+        </div>
+        <script    src="script.js"></script>
+    </body>
+</html>

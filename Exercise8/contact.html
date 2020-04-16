@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foteini's portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <!--Top menu will be displayed only in devices with maxwidth:600px-->
+            <div class="top-menu">
+                <button class="btn" onclick="displayMenu()">
+                    <img src="images/icon.png" width="50" height="50" alt="content icon">
+                </button>
+                <h2>Foteini's Portfolio</h2>
+            </div>
+            <nav class="menu">
+                <div class="content">
+                    <button class="closebtn" onclick="closeMenu()">
+                        <img src="images/close.png" width="50" height="50" alt="close button">
+                    </button>
+                    <picture>
+                        <source media="(min-width:600px)" srcset="images/me2.png">
+                        <img src="images/me.png" alt="Foteini's portait" width="200" height="240">
+                    </picture>
+                    <a href="index.html">Αρχική</a>
+                    <a href="about.html">Σχετικά</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Επικοινωνία</a>
+                    <footer>
+                    &copy;Foteini Papadopoulou, April 2020
+                    </footer>
+                </div>
+            </nav>
+            <main class="main">
+                <header>
+                   <h1>Επικοινωνία</h1>
+                </header>
+                <div id="contact">                   
+                        <img class="icons" src="images/loc.png" width="30" height="30" alt="icon location">
+                        <a href="https://goo.gl/maps/6CVPs6MtQdgPmUAo8" target="_blank">
+                            Άγιος Ιωάννης Ρέντης,Ελλάδα
+                        </a><br>                   
+                        <img class="icons" src="images/email.svg" width="25" height="25" alt="icon email">
+                        
+                        <a href="mailto:fotinipapad@hotmail.com">
+                            fotinipapad@hotmail.com
+                        </a><br>
+                        <img class="icons" src="images/tel.png" width="25" height="25" alt="icon telephone">                      
+                        <a href="tel:6970740830">
+                            6970740830
+                        </a> <br>                  
+                        <img class="icons" src="images/linkedin.svg" width="25" height="25" alt="icon linkedin">                       
+                        <a href="https://linkedin.com/in/foteini-papadopoulou-4ba01a164" target="_blank">
+                            linkedin.com/in/foteini-papadopoulou/
+                        </a>                   
+                </div> 
+                <h2>Φόρμα Επικοινωνίας</h2>
+                
+                <form id="contactform" method="post" action="mailto:fotinipapad@hotmail.com?subject=Contact_Form_from_site" enctype="text/plain">
+                        <p>Όνομα:<input id="firstname" type="text" name="First Name" placeholder="Το όνομα σας.."></p>
+                        <p>Επώνυμο:<input id="lastname" type="text" name="Last Name" placeholder="Το επώνυμο σας.." ></p>
+                        <p id="text-email">Email:<input id="email" type="email" name="Email" placeholder="To email σας.."></p>
+                        <h4>Μήνυμα</h4>
+                        <textarea placeholder="Πληκτρολογήστε το μήνυμα σας εδώ ..." name="Message"  ></textarea><br>
+                   
+                    <input type='reset' value='Επαναφορά' name='reset'>
+                    <input type="submit" value="Αποστολή">
+                </form> 
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

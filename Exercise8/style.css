@@ -1,0 +1,235 @@
+@font-face{
+    font-family: myFont;
+    src:url('./fonts/Manrope-VariableFont_wght.ttf') format("truetype");
+}
+html,body{
+    height:100%;
+}
+body{
+    margin : 0;
+    font-family: myFont,'Open Sans', Helvetica, sans-serif;
+    font-size: 20px;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p{
+    font-size: 18px;
+    padding:20px;
+    text-align: justify;
+}
+.grid-container{
+    display : grid;
+    grid-template-columns : 23% 1fr;     
+    height: inherit;
+}
+
+.menu{
+    grid-column : 1;
+    background-color : #8b8a8a7e ;
+    width : 100%;
+    text-align: center;
+    
+}
+
+.main{
+    grid-column : 2; 
+    padding:20px;
+}
+
+.menu > .content {
+    position : sticky;
+    top : 0;
+    margin:0;
+    padding:10px;
+    line-height: 2;
+}
+footer{
+    font-size: 80%;
+    clear:both;
+    padding-top:20px;
+    letter-spacing: -1px;
+}
+.top-menu{
+    display: none;
+    background-color : #8b8a8a7e ;
+    width:100%;
+}
+.top-menu h2{
+    float:right;
+    display:inline;
+    margin:0;
+    padding:10px 10px 0 0;
+}
+.menu a{
+    display: block;
+    
+}
+a:link{
+    color:rgb(58, 58, 58);
+    text-decoration: none;
+}
+a:visited{
+    color:rgb(56, 12, 12);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color : rgb(117, 5, 5);
+}
+img{
+    padding:5px;
+    max-width: 100%;
+}
+figcaption{
+    font-size: smaller;
+    width:max-content;
+    margin:0;
+}
+figure{
+    display: inline-block;
+}
+#audiomixer{
+    margin:0;
+}
+.main img{
+    margin:20px;
+}
+.main .icons{
+    margin:0;
+}
+.closebtn{
+    display: none;
+}
+#contactform ,#contactform p{
+    text-align: center;
+    margin:0;
+}
+#contactform input{
+    padding:10px;
+    font-size: 18px;
+    width:180px;
+    border:none;
+    background-color: inherit;
+}
+#contactform input:hover{
+    border-bottom:2px solid rgb(117, 5, 5);
+    background-color:#f8b78250 ;
+}
+#contactform textarea{
+    font-size: 18px;
+    width:90%;
+    height: 150px;
+    padding:10px;
+}
+#contactform textarea:hover{
+    border:2px solid rgb(117, 5, 5);
+    background-color:#f8b78250 ;
+}
+#contactform input[type="reset"]{
+    border: 1px solid rgb(117, 5, 5);
+    width:min-content;
+    border-radius: 10%;
+   float:left;
+}
+#contactform input[type="submit"]{
+    background-color: rgb(117, 5, 5);
+    color:white;
+    width:150px;
+    border-radius: 5%;
+    float:right;
+}
+#contactform input[type="submit"]:hover{
+    background-color: rgb(179, 48, 48);
+}
+#contactform input[type="reset"]:hover{
+    background-color:rgb(238, 156, 156);
+}
+#bg-img{
+    background-image: url("images/background-img.jpg");  
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+#welcomeheader{
+    padding:20px 50px 20px 30px;
+}
+#welcomeheader h1,#welcomeheader h2,#welcomeheader h3{
+    text-align: left;
+}
+#welcomeheader h1 a{
+    color:rgb(56, 12, 12);
+    text-decoration: none;
+}
+#welcomeheader h1 a:hover{
+    text-decoration: underline;
+}
+#welcomeheader h4{
+    font-size:40px;
+    font-style: italic;
+    font-family: Gesta;
+    line-height: 60px;
+    padding-left:18px;
+    color:#0000009c;
+    letter-spacing: -2px;
+}
+@media only screen and (max-width: 600px){
+    /*Hide side menu*/
+    .menu{
+        display: none;
+        height: 100%; 
+        width: 100%; 
+        position: fixed; 
+        overflow-x: hidden; 
+        background-color:#8b8a8af8 ;
+    }
+    /*Display top menu*/
+    .top-menu{
+        width:100%;
+        display: block;
+        grid-row: 1;
+        position: fixed;
+        top:0;
+        background-color:#8b8a8af8 ;
+    }
+    /*Remake rows and columns*/
+    .main{
+        grid-row: 2;
+        grid-column:1;
+    }
+   
+    #bg-img{
+        background-image: url("images/background-img2.jpg");  
+        background-size: cover;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;  
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content auto;
+    }
+    .btn{
+        background: transparent;
+        border: none;
+    }
+    .btn:hover,.closebtn:hover{
+        background-color:#eeededda ;
+    }
+    .closebtn{
+        display:block;
+        background:transparent;
+        border:none;
+    }
+    h1{
+        margin-top:50px;
+    }
+    
+}

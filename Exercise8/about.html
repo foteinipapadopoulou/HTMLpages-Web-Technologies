@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foteini's portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <!--Top menu will be displayed only in devices with maxwidth:600px-->
+            <div class="top-menu">
+                <button class="btn" onclick="displayMenu()">
+                    <img src="images/icon.png" width="50" height="50" alt="content icon">
+                </button>
+                <h2>Foteini's Portfolio</h2>
+            </div>
+            <nav class="menu">
+                <div class="content">
+                    <button class="closebtn" onclick="closeMenu()">
+                        <img src="images/close.png" width="50" height="50" alt="close button">
+                    </button>
+                    <picture>
+                        <source media="(min-width:600px)" srcset="images/me2.png">
+                        <img src="images/me.png" alt="Foteini's portait" width="200" height="240">
+                    </picture>
+                    <a href="index.html">Αρχική</a>
+                    <a href="about.html">Σχετικά</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Επικοινωνία</a>
+                    <footer>
+                    &copy;Foteini Papadopoulou, April 2020
+                    </footer>
+                </div>
+            </nav>
+            <main class="main">
+                <header>
+                   <h1>About me</h1>
+                </header>
+                <p>&emsp;Ονομάζομαι <b>Φωτεινή Παπαδοπούλου</b> και είμαι 4ετής φοιτήτρια του 
+                    τμήματος <b>Πληροφορικής</b> του 
+                    Οικονομικού Πανεπιστημίου Αθηνών από το 2016. Οι δύο κατευθύνσεις 
+                    που έχω ακολουθήσει είναι οι "Βάσεις Δεδομένων και Διαχείριση Γνώσης" και "Πληροφοριακά Συστήματα και Ασφάλεια" καθώς θεωρώ πως είναι αρκετά ενδιαφέροντα
+                    πεδία της Πληροφορικής. Το portfolio που έχω δημιουργήσει έχει ως σκοπό να σας παρουσίασει 
+                    μερικά από τα <b>skills</b> μου και τα <b>projects</b> που έχω κατασκευάσει κατά διάρκεια
+                    της φοίτησης στο πανεπιστήμιο. Τα projects που έχω καταγράψει αποτελούσαν μέρος των μαθημάτων των <i>Κατανεμημένων
+                    Συστημάτων</i>, της <i>Τεχνητής Νοημοσύνης</i> και τις <i>Τεχνολογίες Πολυμέσων</i>. Άλλα ενδιαφέροντα πεδία της Πληροφορικής 
+                    που θεωρώ ωφέλιμα για κάποιον που ασχολείται με τον κλάδο της Πληροφορικής είναι οι Αλγόριθμοι και η
+                    Θεωρια Πιθανοτήτων διότι μπορεί κανείς να μάθει εις βάθος τις αρχές τις Πληροφορικής οι οποίες δεν βασίζονται μόνο
+                    στον προγραμματισμό και να έχει σφαιρικές γνώσεις για τον κλάδο τις Πληροφορικής. 
+                    Στην υπόλοιπη σελίδα ακολουθούν μερικά από τα hard skills τα οποία έχω αποκτήσει και τις <b>γλώσσες</b> τις οποίες γνωρίζω. 
+                </p>
+                <h2>Hard skills</h2>
+                
+                <p>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="images/java.png">
+                        <img src="images/java2.png" alt="java logo" width="100" height="195">
+                    </picture>
+                     <picture>
+                        <source media="(min-width: 600px)" srcset="images/c++.png">
+                        <img src="images/c++2.png" alt="c++ logo" width="100" height="123" >
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="images/c.png">
+                        <img src="images/c2.png" alt="c logo" width="100" height="120"  >
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="images/python.png">
+                        <img src="images/python2.png" alt="python logo" width="100" height="110" >
+                    </picture>
+                     <picture>
+                        <source media="(min-width: 600px)" srcset="images/sql.png">
+                        <img src="images/sql2.png" alt="sql logo" width="200" height="123" >
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="images/htmlcss.jpg">
+                        <img src="images/htmlcss2.jpg" alt="html css logo" width="300" height="198" >
+                    </picture>
+                </p>
+                
+                <h2>Γλώσσες</h2>
+                    
+                    <figure>
+                        <figcaption>Αγγλικά , ECPE , Δεκέμβριος 2018</figcaption>
+                        <img src="images/ecpe.png" alt="uni of michigan logo" width="150" height="190"  >
+                        
+                    </figure>
+                    <figure>
+                        <figcaption>Ελληνικά , Μητρική Γλώσσα</figcaption>
+                        <picture>
+                            <source media="(min-width: 600px)" srcset="images/greekflag.png">
+                            <img src="images/greekflag2.png" alt="greek flag" width="150" height="110" >
+                        </picture>
+                    </figure>
+                    <figure>
+                        <figcaption>Γαλλικά , Delf A1 , 2012</figcaption>
+                        <picture>
+                            <source media="(min-width: 600px)" srcset="images/institut.jpg">
+                            <img src="images/institut2.jpg" alt="institut francais" width="150" height="110" >
+                        </picture>
+                    </figure>
+                </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
